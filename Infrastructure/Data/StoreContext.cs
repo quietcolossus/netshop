@@ -7,7 +7,7 @@ namespace Infrastructure.Data;
 
 public class StoreContext(DbContextOptions options) : DbContext(options)
 {
-    public DbSet<Product> Products { get; set; }
+    public DbSet<Product> Products { get; set; } //check the settings at some point to see if nullable is disabled in the project repo
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
